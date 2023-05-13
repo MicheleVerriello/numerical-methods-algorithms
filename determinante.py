@@ -33,10 +33,10 @@ if __name__ == '__main__':
 
     tempi = []
     for i in range(1000):
-        inizio = time.time()
+        start = time.time()
         calcolo_determinante(A)
-        fine = time.time()
-        tempo = fine - inizio
+        end = time.time()
+        tempo = end - start
         tempi.append(tempo)
 
     tempo_medio = statistics.mean(tempi)
