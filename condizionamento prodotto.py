@@ -27,8 +27,8 @@ def condizionamento_prodotto(n):
         err_P[i] = abs(P - Pt) / abs(P)
 
         print("Perturbazione: e**-%d" % i)
-        print("Prodotto dei dati esatti: %f * %f = %.16f" % (x, y, P))
-        print("Prodotto dei dati perturbati: %f * %f = %.16f" % (xt, yt, Pt))
+        print("Prodotto dati esatti: %f * %f = %.16f" % (x, y, P))
+        print("Prodotto dati perturbati: %f * %f = %.16f" % (xt, yt, Pt))
         print("Errore sul dato x: %e: " % err_x[i])
         print("Errore sul dato y: %e: " % err_y[i])
         print("Errore sul prodotto P: %e: " % err_P[i])

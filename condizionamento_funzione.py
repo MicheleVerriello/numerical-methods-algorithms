@@ -24,10 +24,9 @@ def condizionamento_radice(n):
         err_fx[i] = abs(fx - fxt[i]) / abs(fx)
 
         print("Perturbazione: e**-%d" % i)
-        print("Calcolo della funzione sul dato esatto: %.16f" % fx)
-        print("Prodotto dei dati perturbati: %.16f" % fxt[i])
+        print("Calcolo funzione sul dato esatto: %.16f" % fx)
         print("Errore sul dato x: %e: " % err_x[i])
-        print("Errore sulla funzione fx: %e: " % err_fx[i])
+        print("Errore sulla funzione f(x): %e: " % err_fx[i])
         print(" ")
 
     return err_x, err_fx
